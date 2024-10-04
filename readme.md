@@ -1,6 +1,6 @@
 # Image-Based Steganography
 
-![Project Image](path/to/your/image.jpg)  <!-- Replace with the actual path of your intro image -->
+![Project Image](./assets//Screenshot%20(107).png)  <!-- Replace with the actual path of your intro image -->
 
 ## Introduction
 Image-Based Steganography is a secure method of hiding secret information within an image file. This project utilizes cryptographic techniques to encrypt messages and embed them within image files, ensuring confidentiality and data integrity. By harnessing the power of image processing and encryption algorithms, this application provides a unique solution to the challenge of secure communication.
@@ -20,11 +20,13 @@ In today's digital landscape, data breaches and privacy concerns are increasingl
 - **Responsive Design**: The application is fully responsive, meaning it functions flawlessly on various devices, including desktops, tablets, and smartphones. This ensures accessibility for all users, regardless of their device preferences.
 - **Error Handling**: The application incorporates robust error handling mechanisms, providing users with informative feedback in case of incorrect inputs or issues during the encryption/decryption process.
 
-### Feature Snapshots
-![Encryption Feature](path/to/encryption-screenshot.jpg) <!-- Replace with actual screenshot -->
+### Feature Snapshots 
+![Encryption Feature](./assets/Screenshot%20(107).png)      <!-- Replace with actual screenshot -->
+![Encrypted Image](./assets//Screenshot%20(108).png)         <!-- Replace with actual screenshot -->
+
 *Encryption Interface: Users can upload an image and enter a message to encrypt and embed within the image.*
 
-![Decryption Feature](path/to/decryption-screenshot.jpg) <!-- Replace with actual screenshot -->
+![Decryption Feature](./assets/Screenshot%20(110).png) <!-- Replace with actual screenshot -->
 *Decryption Interface: Users can upload the encrypted image and retrieve the hidden message.*
 
 ## How It Works
@@ -46,9 +48,4 @@ In today's digital landscape, data breaches and privacy concerns are increasingl
 - **Image Processing**: 
   - **Pillow (PIL)**: A Python Imaging Library that facilitates image manipulation and processing tasks.
 
-## Getting Started
-To get a local copy up and running, follow these simple steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/image-based-steganography.git
