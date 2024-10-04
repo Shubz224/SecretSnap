@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Based Steganography</title>
+</head>
+<body>
+    <h1>Image Encryption</h1>
+    <form action="/encrypt" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <input type="text" name="key" placeholder="Encryption Key" required>
+        <textarea name="message" placeholder="Message to Hide" required></textarea>
+        <button type="submit">Encrypt</button>
+    </form>
+
+    <h1>Image Decryption</h1>
+    <form action="/decrypt" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <input type="text" name="key" placeholder="Decryption Key" required>
+        <button type="submit">Decrypt</button>
+    </form>
+</body>
+</html>
