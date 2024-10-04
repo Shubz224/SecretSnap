@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Based Steganography</title>
+    <link rel="stylesheet" href="../static//styles.css"> <!-- Include the CSS file -->
 </head>
 <body>
-    <h1>Image Encryption</h1>
-    <form action="/encrypt" method="POST" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*" required>
-        <input type="text" name="key" placeholder="Encryption Key" required>
-        <textarea name="message" placeholder="Message to Hide" required></textarea>
-        <button type="submit">Encrypt</button>
-    </form>
+    <div class="container">
+        <h1>Image Encryption</h1>
+        <div class="split">
+            <div class="encrypt-section">
+                <form action="/encrypt" method="POST" enctype="multipart/form-data">
+                    <label for="image">Select Image:</label>
+                    <input type="file" name="image" accept="image/*" required>
 
-    <h1>Image Decryption</h1>
-    <form action="/decrypt" method="POST" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*" required>
-        <input type="text" name="key" placeholder="Decryption Key" required>
-        <button type="submit">Decrypt</button>
-    </form>
+                    <label for="key">Encryption Key:</label>
+                    <input type="text" name="key" placeholder="Encryption Key" required>
+
+                    <label for="message">Message to Hide:</label>
+                    <textarea name="message" placeholder="Message to Hide" required></textarea>
+
+                    <button type="submit">Encrypt</button>
+                </form>
+            </div>
+        </div>
+
+        <h1>Image Decryption</h1>
+        <div class="split">
+            <div class="decrypt-section">
+                <form action="/decrypt" method="POST" enctype="multipart/form-data">
+                    <label for="image">Select Image:</label>
+                    <input type="file" name="image" accept="image/*" required>
+
+                    <label for="key">Decryption Key:</label>
+                    <input type="text" name="key" placeholder="Decryption Key" required>
+
+                    <button type="submit">Decrypt</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

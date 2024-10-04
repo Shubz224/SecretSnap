@@ -14,6 +14,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 40px;
+    color: #333;
 }
 
 .split {
@@ -23,20 +24,33 @@ h1 {
 
 .encrypt-section, .decrypt-section {
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     width: 45%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.encrypt-section:hover, .decrypt-section:hover {
+    transform: scale(1.02);
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
+    font-weight: bold;
 }
 
 input[type="text"], textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="file"] {
     margin-bottom: 20px;
 }
 
@@ -44,11 +58,31 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .split {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .encrypt-section, .decrypt-section {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
